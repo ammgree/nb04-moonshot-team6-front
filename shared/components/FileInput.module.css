@@ -1,0 +1,54 @@
+.container {
+  border-radius: 8px;
+  border: 1px solid #E5E5EA;
+  background: #F6F6F8;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.file {
+  border-radius: 8px;
+  border: 1px solid #EDEDF0;
+  background: #FFF;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.closeIcon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.fileName {
+  flex-grow: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.input {
+  display: none;
+}
+
+.button {
+  border-radius: 8px;
+  background: #E5E5EA;
+  padding: 8px 12px;
+  color: #333236;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
