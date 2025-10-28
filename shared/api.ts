@@ -14,7 +14,7 @@ import { TaskStatus } from '@/types/TaskStatus';
 import axios, { AxiosInstance } from "axios";
 
 export const api: AxiosInstance = axios.create({
-  baseURL: "https://nb04-moonshot-team6-back.onrender.com",
+  baseURL: "https://nb04-moonshot-team6.onrender.com",
   withCredentials: true,
 });
 
