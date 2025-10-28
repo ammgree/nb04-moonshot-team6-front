@@ -1,5 +1,4 @@
 import { AxiosError } from 'axios';
-import { axios } from './axios';
 import { PaginationResponse, FindMyTasksQuery } from '@/types/pagination';
 import {
   Comment,
@@ -12,6 +11,13 @@ import {
   UserWithCounts,
 } from '@/types/entities';
 import { TaskStatus } from '@/types/TaskStatus';
+import axios, { AxiosInstance } from "axios";
+
+export const api: AxiosInstance = axios.create({
+  baseURL: "https://nb04-moonshot-team6-back.onrender.com",
+  withCredentials: true,
+});
+
 
 const logError = (error: unknown) => {
   if (error instanceof AxiosError) {

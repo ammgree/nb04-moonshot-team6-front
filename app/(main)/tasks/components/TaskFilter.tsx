@@ -78,7 +78,7 @@ const TaskFilter = ({
       (id === null && !params.get('project_id'))
     );
   };
-
+console.log(members);
   return (
     <div className={cx('container', className)}>
       <div className={cx('tabs')}>
@@ -135,6 +135,7 @@ const TaskFilter = ({
           onChange={handleStatusChange}
           placeholder="상태"
         />
+      
         <Dropdown
           className={cx('assigneeDropdown')}
           options={[
@@ -144,6 +145,7 @@ const TaskFilter = ({
               value: member.id.toString(),
             })),
           ]}
+          
           value={params.get('assignee_id') || ''}
           onChange={handleAssigneeChange}
           placeholder="담당자"
