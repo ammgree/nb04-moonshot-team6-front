@@ -144,7 +144,7 @@ const TaskFilter = ({
               value: member.id.toString(),
             })),
           ]}
-          value={params.get('assignee') || ''}
+          value={params.get('assignee_id') || ''}
           onChange={handleAssigneeChange}
           placeholder="담당자"
         />
