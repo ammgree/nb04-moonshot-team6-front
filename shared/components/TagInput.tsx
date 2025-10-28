@@ -120,6 +120,8 @@ const TagInput = ({ value, onChange, maxTags }: TagInputProps) => {
   };
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if ((event.nativeEvent as any).isComposing || event.key === 'Process') return;
+
     switch (event.key) {
       case '#': {
         event.preventDefault();
